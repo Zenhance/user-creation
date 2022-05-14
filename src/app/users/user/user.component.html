@@ -1,0 +1,19 @@
+<div style="width: 600px">
+  <mat-card class="card-style">
+    <mat-card-title>{{user.firstName}} {{user.lastName}}</mat-card-title>
+    <mat-card-subtitle>Gender: {{user.gender}}</mat-card-subtitle>
+    <mat-card-content>
+
+      <div fxLayout="row" fxLayoutAlign="space-between start">
+        <div class="content-style"><b>Date of Birth:</b>  {{user.dob.substring(0,10)}}</div>
+      </div>
+    </mat-card-content>
+    <mat-card-content>
+      <div fxLayout="row" fxLayoutAlign="space-even start">
+        <div class="content-style"><b>Phone:</b>  {{user.phone}}</div>
+        <div class="content-style"><b>Email:</b>  {{user.email}}</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
+

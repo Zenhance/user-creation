@@ -1,0 +1,10 @@
+.form-container{
+  margin: 100px;
+}
+.full-width{
+  width: 100%;
+}
+
+.card-elevation{
+  elevation: higher;
+}

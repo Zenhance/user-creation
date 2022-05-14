@@ -1,0 +1,29 @@
+.toolbar-items{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-name{
+  margin-right: 50px;
+}
+
+.header-element-font{
+  font-family: Roboto,sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, a:active {
+  color: aliceblue;
+}
+
+.navigation-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
