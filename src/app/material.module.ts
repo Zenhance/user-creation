@@ -10,6 +10,7 @@ import {MatNativeDateModule} from "@angular/material/core";
 import {MatSelectModule} from "@angular/material/select";
 import {MatListModule} from "@angular/material/list";
 import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 
 @NgModule({
   imports:[
@@ -24,6 +25,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     MatSelectModule,
     MatListModule,
     MatPaginatorModule,
+    MatProgressSpinnerModule,
   ],
   exports:[
     MatToolbarModule,
@@ -37,6 +39,7 @@ import {MatPaginatorModule} from "@angular/material/paginator";
     MatSelectModule,
     MatListModule,
     MatPaginatorModule,
+    MatProgressSpinnerModule,
   ]
 })
 

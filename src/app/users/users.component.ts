@@ -11,16 +11,20 @@ import {PageEvent} from "@angular/material/paginator";
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit,OnDestroy {
+
   users: UserModel[];
   private subscription: Subscription;
   pageSlice: UserModel[];
+  isLoading:boolean = false;
 
   constructor(private dataService:DataService,private userService:UserService) { }
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.dataService.getUsers().subscribe((data:UserModel[])=>{
       console.log(data);
       this.users = data;
+      this.isLoading = false
       this.pageSlice = this.users.slice(0,2);
     });
     this.userService.setUsers(this.users);

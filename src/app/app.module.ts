@@ -21,17 +21,18 @@ import {HttpClientModule} from "@angular/common/http";
     UsersComponent,
     UserComponent
   ],
-    imports: [
-        MaterialModule,
-        BrowserModule,
-        BrowserAnimationsModule,
-        FlexLayoutModule,
-        AppRoutingModule,
-        FormsModule,
-        ReactiveFormsModule,
-        HttpClientModule,
+  imports: [
+    MaterialModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
 
-    ],
+
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
