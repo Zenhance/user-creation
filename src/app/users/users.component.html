@@ -1,8 +1,15 @@
 <mat-list style="padding: 20px">
-  <mat-list-item  role="listitem" *ngFor="let i of users; let j=index">
+  <mat-list-item  role="listitem" *ngFor="let i of pageSlice; let j=index">
     <app-user style="margin: 60px"
       [user] = "i"
       [id] = "j"
     ></app-user>
   </mat-list-item>
 </mat-list>
+<mat-paginator [length]="users.length"
+               [pageSize]="2"
+               [pageSizeOptions]="[2,3,4]"
+               aria-label="Select page"
+               *ngIf="pageSlice.length!=0"
+               (page)="onPageChange($event)"
+></mat-paginator>

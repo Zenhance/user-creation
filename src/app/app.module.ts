@@ -13,7 +13,6 @@ import {AppRoutingModule} from "./app-routing.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +30,7 @@ import {HttpClientModule} from "@angular/common/http";
         FormsModule,
         ReactiveFormsModule,
         HttpClientModule,
+
     ],
   providers: [],
   bootstrap: [AppComponent]
